@@ -1,0 +1,9 @@
+.menu__ul--layout {
+    font-size: 1.3rem;
+    font-weight: 700;
+    position: relative;
+    bottom: 32em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}

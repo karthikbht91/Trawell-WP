@@ -1,0 +1,18 @@
+.div__background-image{
+    background-image: url('https://mksdmcdn-9b59.kxcdn.com/trawell/wp-content/uploads/2018/03/rawpixel-com-191102-unsplash-1920x1254.jpg');
+    background-size: 100% auto;
+    height: 100vh;
+    animation: div__background-image--animate 60s infinite
+}
+
+@keyframes div__background-image--animate {
+    0% {
+        transform: scale(1, 1)
+    }
+    50% {
+        transform: scale(1.2, 1.2)
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
