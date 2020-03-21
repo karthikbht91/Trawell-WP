@@ -1,9 +1,86 @@
-.menu__ul--layout {
-    font-size: 1.3rem;
-    font-weight: 700;
-    position: relative;
-    bottom: 32em;
-    text-align: center;
+.menu__ul-layout {
+    font-size: 0.85rem !important;
     display: flex;
     justify-content: center;
+}
+
+.menu__ul-font {
+    color: white; 
+    font-family: QuickSand;
+}
+
+.menu__ul-font::after{
+    content: "\2c5";
+    font-size: 10px;
+    margin-left: 7px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    left: 0;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+    visibility: visible;
+    display: block;
+    opacity: 1;
+}
+
+.navbar-nav:hover:first-child .dropdown-menu {
+    display: block;
+    
+}
+
+.menu-item__a-background{
+      font-size: 10px;      
+      
+}
+
+.menu__ul-position {
+    margin-top: -10px;
+    width:  auto;
+}
+
+ul>li > a.dropdown-item {
+    color: black;
+    cursor: pointer;
+    background-color: white;
+}
+
+ul li > a:hover{
+    color: #08b7ce
+}
+
+
+
+/* .dropdown-menu {
+    left: 100% !important;
+} */
+li > a {
+    font-size: 0.8em;
+}
+
+.menu__ul-position-second{
+    left: 100% !important;
+    top:0%;
+    /* position: relative;
+    top: inherit;
+
+    padding-bottom: inherit; */
+    /* bottom: 0px; */
+}
+
+.menu-item__side-arrow::after{
+    content: "\FE65";
+    font-size: 10px;
+    float:right;
+    font-weight: 700;
+    text-decoration: none;
 }

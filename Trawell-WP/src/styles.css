@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: QuickSand;
+    src: url('//fonts.googleapis.com/css?family=Quicksand');
+}
+
+body{
+    font-family: QuickSand;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 700;
+    overflow-x: hidden;
+}

@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
+  showHomeMenuItem: boolean = false;
   constructor() { }
 
   ngOnInit() {
+  }
+
+  toggleMenu(menuName: string) {
+    switch(menuName){
+      case 'Home':{
+        this.showHomeMenuItem = true;
+        break;
+      }
+    }
   }
 
 }
